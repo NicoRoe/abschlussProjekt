@@ -1,0 +1,13 @@
+@font-face{
+    src: url(/fonts/PlaywriteES-VariableFont_wght) format('truetype');
+    font-family: 'Playwrite';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.headline-xl{
+    font-size: 2rem;
+    font-family: 'Playwrite';
+    font-weight: 600;
+    font-style: normal;
+}
