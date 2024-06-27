@@ -1,20 +1,30 @@
 ---
 import '../css/fonts.css'
+import '../css/variables.css'
 import Navigation from '../components/Navigation.astro'
+import Navigation2 from '../components/Navigation2.astro'
 ---
 
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Navigation />
-    <h1 class="headline-xl">Ciao World</h1>
-    <a href="/">zur Startseite</a>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <Navigation />
+        <Navigation2 />
+        <h1 class="headline-xl">Ciao World</h1>
+        <a href="/">zur Startseite</a>
+    </body>
 </html>
+
+<style>
+    a{
+        color: var(--blue);
+        text-decoration: underline;
+    }
+</style>

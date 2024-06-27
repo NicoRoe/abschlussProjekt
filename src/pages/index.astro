@@ -1,7 +1,12 @@
 ---
 import '../css/fonts.css'
 import '../css/style.css'
+import '../css/variables.css'
+
+import test from '../assets/images/test.jpeg'
+
 import Navigation from '../components/Navigation.astro'
+import Navigation2 from '../components/Navigation2.astro'
 ---
 
 <html lang="en">
@@ -14,11 +19,16 @@ import Navigation from '../components/Navigation.astro'
 	</head>
 	<body>
 		<Navigation />
+		<Navigation2 />
 		<h1 class="headline-xl">Hello World</h1>
 		<a href="/aboutMe">Zur About me Seite</a>
+		<img src={test.src} alt="">
 	</body>
 </html>
 
 <style>
-
+	a{
+		color: var(--blue);
+		text-decoration: underline;
+	}
 </style>
