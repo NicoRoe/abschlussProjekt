@@ -1,13 +1,42 @@
 @font-face{
-    src: url(/fonts/PlaywriteES-Regular.ttf) format('truetype');
-    font-family: 'Playwrite';
-    font-weight: 600;
+    src: url(/public/fonts/Molengo,Montserrat_Alternates,Neuton/Montserrat_Alternates/MontserratAlternates-Regular.ttf) format('truetype');
+    font-family: 'Montserrat_Alternates';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+@font-face{
+    src: url(/public/fonts/Molengo,Montserrat_Alternates,Neuton/Molengo/Molengo-Regular.tff) format('truetype');
+    font-family: 'Molengo';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+@font-face{
+    src: url(/public/fonts/Molengo\,Montserrat_Alternates\,Neuton/Neuton/Neuton-Regular.ttf) format('truetype');
+    font-family: 'Neuton';
+    /* font-weight: 600; */
     font-style: normal;
 }
 
 .headline-xl{
-    font-size: 2rem;
-    font-family: 'Playwrite';
-    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Montserrat_Alternates';
+    /* font-weight: 600; */
     font-style: normal;
 }
+
+.headline-l{
+    font-size: 2rem;
+    font-family: 'Neuton';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+.headline-m{
+    font-size: 1.1rem;
+    font-family: 'Molengo';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+

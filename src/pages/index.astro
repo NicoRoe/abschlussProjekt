@@ -7,6 +7,7 @@ import test from '../assets/images/test.jpeg'
 
 import Navigation from '../components/Navigation.astro'
 import Navigation2 from '../components/Navigation2.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <html lang="en">
@@ -18,11 +19,15 @@ import Navigation2 from '../components/Navigation2.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-		<Navigation />
+		<!-- <Navigation /> -->
 		<Navigation2 />
-		<h1 class="headline-xl">Hello World</h1>
-		<a href="/aboutMe">Zur About me Seite</a>
+		<h1 class="headline-xl">eCommerz</h1>
+		<h3 class="headline-l">Hello World</h3>
+		<p class="headline-m">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, odit assumenda esse suscipit porro a aliquam inventore velit quibusdam dolor praesentium sit atque magni tempore saepe est deserunt ratione autem!
+		</p>
+		
 		<img src={test.src} alt="">
+		<Footer />
 	</body>
 </html>
 

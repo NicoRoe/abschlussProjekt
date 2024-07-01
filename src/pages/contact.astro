@@ -1,0 +1,70 @@
+---
+import '../css/fonts.css'
+import '../css/variables.css'
+import Navigation from '../components/Navigation.astro'
+import Navigation2 from '../components/Navigation2.astro'
+import Footer from '../components/Footer.astro'
+---
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <!-- <Navigation /> -->
+        <Navigation2 />
+        <form action="">
+            <label for="name-input">Your First-name</label>
+            <input type="text" id="name-input" name="first-name" placeholder="...">
+            
+        </form>
+
+        <form action="">
+            <label for="last-name-input">Your Last-name</label>
+            <input type="text" id="last-name-input" name="last-name" placeholder="...">
+            
+        </form>
+
+        <form action="">
+            <label for="email-input">Your First-name</label>
+            <input type="email" id="email-input" name="email-name" placeholder="...">
+            
+        </form>
+
+        <form action="">
+            <label for="name-input">Your First-name</label>
+            <input type="text" id="name-input" name="first-name" placeholder="...">
+            
+        </form>
+        <button type="submit">Submit<i></i></button>
+
+        <Footer />
+    </body>
+</html>
+
+<style>
+    input{
+        color: var(--blue);
+        background-color: var(--bg-grey);
+    }
+
+    button{
+        color: var(--primary);
+        border-right: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+        padding: 10px 20px;
+        box-shadow: 4px 4px 0px 0px;
+        border-radius: 8px;
+        border
+    }
+
+    button:hover{
+        color: var(--highlight);
+        background-color: var(--primary);
+    }
+</style>
