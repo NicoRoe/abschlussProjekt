@@ -5,6 +5,7 @@ import "../css/variables.css";
 
 import test from "../assets/images/test.jpeg";
 import kueste from "../assets/images/kuestenlandschaft.jpg"
+import chip from '../assets/images/chip.jpg'
 
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
@@ -24,7 +25,8 @@ import Card from "../components/Card.astro"
     <!-- <Navigation /> -->
     <Navigation2 />
 	<div>
-		<img src={kueste.src} alt="">
+		<!-- <img src={kueste.src} alt=""> -->
+		<img src={chip.src} alt="">
 		<h1 class="headline-xl">eCommerz</h1>
 	</div>
     <section class="main-layout">
@@ -44,25 +46,33 @@ import Card from "../components/Card.astro"
 </html>
 
 <style>
+	
+
+
   body {
     background-color: var(--bg-color);
   }
 
-div{
+/* div{
 	position: relative;
+	top: 0;
+	right: 0;
 	top: 0;
 }
 
-  img{
-	width: 100vw;
-	height: 30vh;
-
-  }
+ 
 
   h1{
 	position: absolute;
 	bottom: 0;
 	left: 35%;
+  } */
+
+  img{
+	width: 100vw;
+	height: 30vh;
+	object-fit: cover;
+
   }
 
   p{
