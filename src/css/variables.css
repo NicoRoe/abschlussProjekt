@@ -1,5 +1,6 @@
 :root{
     --primary: rgb(25, 25, 255);
     --highlight: white;
-    --bg-grey: rgb(209, 207, 207);
+    --item-bg-grey: rgb(209, 207, 207);
+    --bg-color: rgb(230, 230, 230);
 }

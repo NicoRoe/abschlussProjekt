@@ -18,39 +18,80 @@ import Footer from '../components/Footer.astro'
     <body>
         <!-- <Navigation /> -->
         <Navigation2 />
-        <form action="">
-            <label for="name-input">Your First-name</label>
-            <input type="text" id="name-input" name="first-name" placeholder="...">
-            
-        </form>
+        <h2>Contact me below!</h2>
+        <div>
+            <form action="">
+                <label for="name-input">Your First-name:</label>
+                <input type="text" id="name-input" name="first-name" placeholder="Firstname">
+                
+            </form>
+    
+            <form action="">
+                <label for="last-name-input">Your Last-name:</label>
+                <input type="text" id="last-name-input" name="last-name" placeholder="Lastname">
+                
+            </form>
+    
+            <form action="">
+                <label for="email-input">Your eMail:</label>
+                <input type="email" id="email-input" name="email-name" placeholder="Email">
+                
+            </form>
 
-        <form action="">
-            <label for="last-name-input">Your Last-name</label>
-            <input type="text" id="last-name-input" name="last-name" placeholder="...">
-            
-        </form>
-
-        <form action="">
-            <label for="email-input">Your First-name</label>
-            <input type="email" id="email-input" name="email-name" placeholder="...">
-            
-        </form>
-
-        <form action="">
-            <label for="name-input">Your First-name</label>
-            <input type="text" id="name-input" name="first-name" placeholder="...">
-            
-        </form>
-        <button type="submit">Submit<i></i></button>
+            <form action="">
+                <label for="subject-input">Your Subject:</label>
+                <input type="text" id="email-input" name="email-name" placeholder="Subject">
+                
+            </form>
+    
+            <form action="">
+                <label for="text"></label>
+                <textarea name="work-experience" rows="5" cols="45"></textarea>
+                
+            </form>
+            <button type="submit">Submit<i></i></button>
+        </div>
 
         <Footer />
     </body>
 </html>
 
 <style>
+    body{
+        background-color: rgb(230, 230, 230);
+    }
+
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        padding: 30px;
+    }
+
+
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px red solid;
+        padding: 50px;
+
+    }
+
+    form>*{
+        display: flex;
+    }   
+
     input{
+
+
         color: var(--blue);
-        background-color: var(--bg-grey);
+        /* background-color: var(--bg-grey); */
+        padding: 15px;
+        margin: 10px;
+        
+
     }
 
     button{
@@ -60,11 +101,12 @@ import Footer from '../components/Footer.astro'
         padding: 10px 20px;
         box-shadow: 4px 4px 0px 0px;
         border-radius: 8px;
-        border
+        
     }
 
     button:hover{
         color: var(--highlight);
         background-color: var(--primary);
+        box-shadow: 4px 4px 0px 0px;
     }
 </style>
