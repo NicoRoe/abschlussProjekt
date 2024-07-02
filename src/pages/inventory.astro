@@ -4,12 +4,12 @@ import "../css/style.css";
 import "../css/variables.css";
 
 import test from "../assets/images/test.jpeg";
-import kueste from "../assets/images/kuestenlandschaft.jpg"
+import kueste from "../assets/images/kuestenlandschaft.jpg";
 
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro"
+import Card from "../components/Card.astro";
 ---
 
 <html lang="en">
@@ -23,21 +23,16 @@ import Card from "../components/Card.astro"
   <body>
     <!-- <Navigation /> -->
     <Navigation2 />
-	<div>
-		<img src={kueste.src} alt="">
-		<h1 class="headline-xl">eCommerz</h1>
-	</div>
-    <section class="main-layout">
-      <h3 class="headline-l">Hello World</h3>
-      <p class="paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
-        odit assumenda esse suscipit porro a aliquam inventore velit quibusdam
-        dolor praesentium sit atque magni tempore saepe est deserunt ratione
-        autem!
-      </p>
+    <h3 class="headline-xl">Inventory</h3>
 
+    <section class="inventory">
       <!-- <img src={test.src} alt="" /> -->
-	  <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </section>
     <Footer />
   </body>
@@ -48,25 +43,24 @@ import Card from "../components/Card.astro"
     background-color: var(--bg-color);
   }
 
-div{
-	position: relative;
-	top: 0;
-}
-
-  img{
-	width: 100vw;
-	height: 30vh;
-
+  div {
+    position: relative;
+    top: 0;
   }
 
-  h1{
-	position: absolute;
-	bottom: 0;
-	left: 35%;
+  img {
+    width: 100vw;
+    height: 30vh;
   }
 
-  p{
-	width: 50%;
+  h1 {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+  }
+
+  p {
+    width: 50%;
   }
 
   a {

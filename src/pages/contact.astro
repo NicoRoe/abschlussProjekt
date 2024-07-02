@@ -1,114 +1,131 @@
 ---
-import '../css/fonts.css'
-import '../css/variables.css'
-import Navigation from '../components/Navigation.astro'
-import Navigation2 from '../components/Navigation2.astro'
-import Footer from '../components/Footer.astro'
+import "../css/fonts.css";
+import "../css/variables.css";
+import Navigation from "../components/Navigation.astro";
+import Navigation2 from "../components/Navigation2.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Astro</title>
-    </head>
-    <body>
-        <!-- <Navigation /> -->
-        <Navigation2 />
-        <h2 class="headline-xl">Contact me below!</h2>
-        <div>
-            <form action="">
-                <label for="name-input">Your First-name:</label>
-                <input type="text" id="name-input" name="first-name" placeholder="Firstname">
-                
-            </form>
-    
-            <form action="">
-                <label class="paragraph-2" for="last-name-input">Your Last-name:</label>
-                <input type="text" id="last-name-input" name="last-name" placeholder="Lastname">
-                
-            </form>
-    
-            <form action="">
-                <label for="email-input">Your eMail:</label>
-                <input type="email" id="email-input" name="email-name" placeholder="Email">
-                
-            </form>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <!-- <Navigation /> -->
+    <Navigation2 />
+    <h2 class="headline-xl">Contact me below!</h2>
+    <div>
+      <form action="">
+        <label for="name-input">Your First-name:</label>
+        <input
+          type="text"
+          id="name-input"
+          name="first-name"
+          placeholder="Firstname"
+        />
+      </form>
 
-            <form action="">
-                <label for="subject-input">Your Subject:</label>
-                <input type="text" id="email-input" name="email-name" placeholder="Subject">
-                
-            </form>
-    
-            <form action="">
-                <label for="text"></label>
-                <textarea name="work-experience" rows="5" cols="45"></textarea>
-                
-            </form>
-            <button type="submit">Submit<i></i></button>
-        </div>
+      <form action="">
+        <label for="last-name-input">Your Last-name:</label>
+        <input
+          type="text"
+          id="last-name-input"
+          name="last-name"
+          placeholder="Lastname"
+        />
+      </form>
 
-        <Footer />
-    </body>
+      <form action="">
+        <label for="email-input">Your eMail:</label>
+        <input
+          type="email"
+          id="email-input"
+          name="email-name"
+          placeholder="Email"
+        />
+      </form>
+
+      <form action="">
+        <label for="subject-input">Your Subject:</label>
+        <input
+          type="text"
+          id="email-input"
+          name="email-name"
+          placeholder="Subject"
+        />
+      </form>
+
+      <form action="">
+        <label for="text">Your message</label>
+        <textarea name="work-experience" rows="12" cols="40"></textarea>
+      </form>
+      <button type="submit">Submit<i></i></button>
+    </div>
+
+    <Footer />
+  </body>
 </html>
 
 <style>
-    body{
-        background-color: rgb(230, 230, 230);
-    }
+  input,
+  textarea {
+    border-radius: 15px;
+    width: 100%;
+  }
 
-    h2{
-        font-size: 3rem;
-        text-align: center;
-        padding: 30px;
-    }
+  input[type="text"],
+  [type="email"] {
+    font-family: "ReenieBeanie";
+  }
 
+  body {
+    background-color: var(--bg-color);
+  }
 
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+  }
 
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        border: 1px red solid;
-        padding: 50px;
+    border: 1px red solid;
+    padding: 50px;
+  }
 
-    }
+  form > * {
+    display: flex;
+  }
 
-    form>*{
-        display: flex;
-    }   
+  input {
+    color: var(--blue);
+    /* background-color: var(--bg-grey); */
+    padding: 15px;
+    margin: 10px;
+  }
 
-    input{
+  button {
+    color: var(--primary);
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
 
+    margin: 15px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0px 0px;
+    border-radius: 8px;
+  }
 
-        color: var(--blue);
-        /* background-color: var(--bg-grey); */
-        padding: 15px;
-        margin: 10px;
-        
-
-    }
-
-    button{
-        color: var(--primary);
-        border-right: 2px solid var(--primary);
-        border-bottom: 2px solid var(--primary);
-
-        margin: 15px;
-        padding: 10px 20px;
-        box-shadow: 4px 4px 0px 0px;
-        border-radius: 8px;
-        
-    }
-
-    button:hover{
-        color: var(--highlight);
-        background-color: var(--primary);
-        box-shadow: 4px 4px 0px 0px;
-    }
+  button:hover {
+    color: var(--highlight);
+    background-color: var(--primary);
+    box-shadow: 4px 4px 0px 0px;
+  }
 </style>

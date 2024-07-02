@@ -3,25 +3,33 @@
 ---
 
 <footer>
+  <section>
     <ul>
-        <div class="links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/aboutMe">About</a></li>
-            <li><a href="">Home</a></li>
-        </div>
+      <div class="social-media">
+        <li><a href="/"><i></i>media-1</a></li>
+        <li><a href="/"><i></i></a>media-1</li>
+        <li><a href="/"><i></i></a>media-1</li>
+      </div>
     </ul>
+  </section>
+  <ul>
+    <section>
+      <div class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutMe">About</a></li>
+        <li><a href="">Home</a></li>
+      </div>
+    </section>
+  </ul>
 </footer>
 
 <style>
   footer {
     background-color: var(--primary);
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
-    
-    
-
-    
+    height: 300px;
   }
 
   img {
@@ -32,21 +40,23 @@
   ul {
     list-style-type: none;
     margin: 0 15px;
-    
-    
   }
 
-  .links{
+  .social-media {
+    border: 1px red solid;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: end;
   }
 
   li {
     padding: 10px 15px;
     font-family: "Montserrat_Alternates";
     color: var(--highlight);
-
-    
-    
   }
 </style>

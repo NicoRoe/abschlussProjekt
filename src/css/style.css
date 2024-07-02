@@ -1,4 +1,37 @@
-.main-layout{
-        display: flex;
-        flex-direction: column;
-      }
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory{
+    display: flex;
+/*     flex-direction: column;
+ */    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: var(--primary);
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+
+    margin: 15px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0px 0px;
+    border-radius: 8px;
+
+    max-width: min-content;
+    min-width: auto;
+
+}
+
+button:hover {
+    color: var(--highlight);
+    background-color: var(--primary);
+    box-shadow: 4px 4px 0px 0px;
+}
