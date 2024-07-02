@@ -35,3 +35,15 @@ button:hover {
     background-color: var(--primary);
     box-shadow: 4px 4px 0px 0px;
 }
+
+.instagram:hover{
+    color: hotpink;
+}
+
+.whatsapp:hover{
+    color: greenyellow;
+}
+
+.linkedin:hover{
+    color: rgb(43, 208, 226);
+}
