@@ -1,33 +1,82 @@
 ---
-import '../css/fonts.css'
-import '../css/variables.css'
-import Navigation from '../components/Navigation.astro'
-import Navigation2 from '../components/Navigation2.astro'
-import Footer from '../components/Footer.astro'
+import "../css/fonts.css";
+import "../css/variables.css";
+import Navigation from "../components/Navigation.astro";
+import Navigation2 from "../components/Navigation2.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Astro</title>
-    </head>
-    <body>
-        <!-- <Navigation /> -->
-        <Navigation2 />
-        <h1 class="headline-xl">Ciao World</h1>
-        <a href="/">zur Startseite</a>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation2 />
 
-        <Footer />
-    </body>
+    <h1 class="headline-xl">About us</h1>
+    <section class="wrapper">
+      <div class="">
+        <div class="test">BILD</div>
+        <h2 class="headline-l">Lorem Ipsum</h2>
+      </div>
+      <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
+        officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
+        quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
+        optio culpa?
+      </p>
+    </section>
+    <section class="wrapper">
+      <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
+        officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
+        quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
+        optio culpa?
+      </p>
+      <div class="">
+        <div class="test">BILD</div>
+        <h2 class="headline-l">Lorem Ipsum</h2>
+      </div>
+    </section>
+    <section class="wrapper">
+        <div class="">
+          <div class="test">BILD</div>
+          <h2 class="headline-l">Lorem Ipsum</h2>
+        </div>
+        <p class="paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
+          officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
+          quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
+          optio culpa?
+        </p>
+      </section>
+  </body>
+
+  <Footer />
 </html>
 
 <style>
-    a{
-        color: var(--blue);
-        text-decoration: underline;
-    }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    border: 1px red solid;
+  }
+
+  .test {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+  }
+
+  p {
+    width: 50%;
+    padding: 20px;
+  }
 </style>

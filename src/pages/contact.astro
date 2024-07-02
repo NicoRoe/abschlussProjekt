@@ -18,7 +18,7 @@ import Footer from '../components/Footer.astro'
     <body>
         <!-- <Navigation /> -->
         <Navigation2 />
-        <h2>Contact me below!</h2>
+        <h2 class="headline-xl">Contact me below!</h2>
         <div>
             <form action="">
                 <label for="name-input">Your First-name:</label>
@@ -27,7 +27,7 @@ import Footer from '../components/Footer.astro'
             </form>
     
             <form action="">
-                <label for="last-name-input">Your Last-name:</label>
+                <label class="paragraph-2" for="last-name-input">Your Last-name:</label>
                 <input type="text" id="last-name-input" name="last-name" placeholder="Lastname">
                 
             </form>
@@ -98,6 +98,8 @@ import Footer from '../components/Footer.astro'
         color: var(--primary);
         border-right: 2px solid var(--primary);
         border-bottom: 2px solid var(--primary);
+
+        margin: 15px;
         padding: 10px 20px;
         box-shadow: 4px 4px 0px 0px;
         border-radius: 8px;

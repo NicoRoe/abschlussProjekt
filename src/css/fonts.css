@@ -1,3 +1,5 @@
+/* paket 1 */
+
 @font-face{
     src: url(/public/fonts/Molengo,Montserrat_Alternates,Neuton/Montserrat_Alternates/MontserratAlternates-Regular.ttf) format('truetype');
     font-family: 'Montserrat_Alternates';
@@ -19,11 +21,38 @@
     font-style: normal;
 }
 
+/* paket 2 */
+
+@font-face{
+    src: url(/public/fonts/Lancelot\,Lustria\,Reenie_Beanie/Lancelot/Lancelot-Regular.ttf) format('truetype');
+    font-family: 'Lancelot';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+@font-face{
+    src: url(/public/fonts/Lancelot\,Lustria\,Reenie_Beanie/Lustria/Lustria-Regular.ttf) format('truetype');
+    font-family: 'Lustria';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+@font-face{
+    src: url(/public/fonts/Lancelot\,Lustria\,Reenie_Beanie/Reenie_Beanie/ReenieBeanie-Regular.ttf) format('truetype');
+    font-family: 'ReenieBeanie';
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+/* font-classes */
+
 .headline-xl{
     font-size: 3rem;
     font-family: 'Montserrat_Alternates';
     /* font-weight: 600; */
     font-style: normal;
+    text-align: center;
+    padding: 30px;
 }
 
 .headline-l{
@@ -33,9 +62,16 @@
     font-style: normal;
 }
 
-.headline-m{
+.paragraph{
     font-size: 1.1rem;
-    font-family: 'Molengo';
+    font-family: 'Molengo'; /* sans-serif */
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+.paragraph-2{
+    font-size: rem;
+    font-family: 'ReenieBeanie'; /* schnörkel */
     /* font-weight: 600; */
     font-style: normal;
 }
