@@ -1,6 +1,8 @@
 ---
 import "../css/fonts.css";
 import "../css/variables.css";
+import "../css/style.css";
+
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
@@ -12,6 +14,9 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <script
+      src="https://kit.fontawesome.com/506e46f956.js"
+      crossorigin="anonymous"></script>
     <title>Astro</title>
   </head>
   <body>
@@ -20,16 +25,11 @@ import Footer from "../components/Footer.astro";
     <h2 class="headline-xl">Contact me below!</h2>
     <div>
       <form action="">
-        <label for="name-input">Your First-name:</label>
-        <input
-          type="text"
-          id="name-input"
-          name="first-name"
-          placeholder="Firstname"
-        />
+        <label for="name-input">Your Name:</label>
+        <input type="text" id="name-input" name="name" placeholder="Name" />
       </form>
 
-      <form action="">
+      <!--       <form action="">
         <label for="last-name-input">Your Last-name:</label>
         <input
           type="text"
@@ -37,12 +37,12 @@ import Footer from "../components/Footer.astro";
           name="last-name"
           placeholder="Lastname"
         />
-      </form>
+      </form> -->
 
       <form action="">
-        <label for="email-input">Your eMail:</label>
+        <label for="email-input">Your e-mail:</label>
         <input
-          type="email"
+          type="text"
           id="email-input"
           name="email-name"
           placeholder="Email"
@@ -53,14 +53,14 @@ import Footer from "../components/Footer.astro";
         <label for="subject-input">Your Subject:</label>
         <input
           type="text"
-          id="email-input"
-          name="email-name"
+          id="subject-input"
+          name="subject-name"
           placeholder="Subject"
         />
       </form>
 
       <form action="">
-        <label for="text">Your message</label>
+        <label for="text">Your message:</label>
         <textarea name="work-experience" rows="12" cols="40"></textarea>
       </form>
       <button type="submit">Submit<i></i></button>
@@ -73,13 +73,21 @@ import Footer from "../components/Footer.astro";
 <style>
   input,
   textarea {
-    border-radius: 15px;
+    border-radius: 7px;
     width: 100%;
   }
 
   input[type="text"],
   [type="email"] {
     font-family: "ReenieBeanie";
+  }
+
+  input:hover[type="text"]{
+    transform: scale(1.1);
+  }
+
+  input:hover[type="email"] {
+    transform: scale(1.1);
   }
 
   body {
@@ -93,11 +101,13 @@ import Footer from "../components/Footer.astro";
   }
 
   div {
-    display: flex;
+    width: 100%;
+
+      display: flex;
     flex-direction: column;
     align-items: center;
 
-    border: 1px red solid;
+    /* border: 1px red solid; */
     padding: 50px;
   }
 

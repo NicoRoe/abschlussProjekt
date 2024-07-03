@@ -25,8 +25,8 @@ button {
     box-shadow: 4px 4px 0px 0px;
     border-radius: 8px;
 
-    max-width: min-content;
-    min-width: auto;
+    max-width: max-content;
+    min-width: min-content;
 
 }
 

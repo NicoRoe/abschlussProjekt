@@ -10,7 +10,9 @@ import kueste from "../assets/images/kuestenlandschaft.jpg";
     beatae facilis eum quae repudiandae voluptas harum recusandae omnis ducimus.
   </p>
 
-  <button><a href="">more</a><i></i></button>
+  <button>
+    <a href="">more</a><i class="fa-solid fa-arrow-right"></i>
+  </button>
 </section>
 
 <style>
@@ -25,7 +27,7 @@ import kueste from "../assets/images/kuestenlandschaft.jpg";
     height: auto;
 
     background-color: rgb(195, 195, 195);
-    border-radius: 31px;
+    border-radius: 15px;
     /* border: 5px green solid; */
   }
 
@@ -33,15 +35,24 @@ import kueste from "../assets/images/kuestenlandschaft.jpg";
     object-fit: contain;
     height: 10%;
 
-    border-radius: 31px 31px 0 0;
+    border-radius: 15px 15px 0 0;
   }
 
   p {
     text-align: left;
+
     text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+
+    padding: 10px;
   }
 
   button {
     align-self: flex-end;
+  }
+
+  i {
+    padding: 5px;
   }
 </style>

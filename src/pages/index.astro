@@ -2,15 +2,16 @@
 import "../css/fonts.css";
 import "../css/style.css";
 import "../css/variables.css";
+import "../css/responsive.css"
 
 import test from "../assets/images/test.jpeg";
-import kueste from "../assets/images/kuestenlandschaft.jpg"
-import chip from '../assets/images/chip.jpg'
+import kueste from "../assets/images/kuestenlandschaft.jpg";
+import chip from "../assets/images/chip.jpg";
 
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro"
+import Card from "../components/Card.astro";
 ---
 
 <html lang="en">
@@ -20,18 +21,20 @@ import Card from "../components/Card.astro"
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
-	<script src="https://kit.fontawesome.com/506e46f956.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/506e46f956.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- <Navigation /> -->
     <Navigation2 />
-	<div>
-		<!-- <img src={kueste.src} alt=""> -->
-		<img src={chip.src} alt="">
-		<h1 class="headline-xl">eCommerz</h1>
-	</div>
+    <div>
+      <!-- <img src={kueste.src} alt=""> -->
+      <img src={chip.src} alt="" />
+      <h1 class="headline-xl">Who knows?</h1>
+    </div>
     <section class="main-layout">
-      <h3 class="headline-l">Hello World</h3>
+      <h3 class="headline-l">Hello World #617</h3>
       <p class="paragraph">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
         odit assumenda esse suscipit porro a aliquam inventore velit quibusdam
@@ -40,21 +43,39 @@ import Card from "../components/Card.astro"
       </p>
 
       <!-- <img src={test.src} alt="" /> -->
-	  <Card />
+      <Card />
+    </section>
+	
+    <section class="area">
+		
+      <Card />
+      <Card />
+      <Card />
     </section>
     <Footer />
   </body>
 </html>
 
 <style>
-	
+  .area{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
+		border-top: 1px darkgray solid;
+		border-bottom: 1px darkgray solid;
+		background-color: rgb(209, 208, 208);
+
+		margin-top: 100px;
+		/* margin-bottom: 100px; */
+		height: 100vh;
+	}
 
   body {
     background-color: var(--bg-color);
   }
 
-/* div{
+  /* div{
 	position: relative;
 	top: 0;
 	right: 0;
@@ -69,15 +90,14 @@ import Card from "../components/Card.astro"
 	left: 35%;
   } */
 
-  img{
-	width: 100vw;
-	height: 30vh;
-	object-fit: cover;
-
+  img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
   }
 
-  p{
-	width: 50%;
+  p {
+    width: 50%;
   }
 
   a {

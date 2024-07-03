@@ -1,0 +1,38 @@
+/* Media Queries zum Überschreiben von CSS-Regeln */
+/* Mobile First-Ansatz */
+
+/* Smartphone-Design <640px */
+h3 {
+	background-color: yellow;
+}
+
+/* Smartphones im Querformat */
+@media (min-width: 640px) {
+	h3 {
+		background-color: orange;
+	}
+  
+
+
+}
+
+/* Tablets Hochformat */
+@media (min-width: 768px) {
+	h3 {
+		background-color: red;
+	}	
+}
+
+/* Tablets Querformat & kleine Monitore */
+@media (min-width: 1024px) {
+	h3 {
+		background-color: blue;
+	}	
+}
+
+/* Große Monitore */
+@media (min-width: 1280px) {
+	h3 {
+		background-color: green;
+	}	
+}

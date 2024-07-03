@@ -3,6 +3,9 @@
 ---
 
 <nav>
+  <div class="search-input">
+    <input type="text" placeholder="search" />
+  </div>
   <ul>
     <div class="links">
       <li><a href="/">Home</a></li>
@@ -18,6 +21,23 @@
     background-color: var(--primary);
 
     width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  input {
+    border-radius: 15px;
+  }
+
+  input[placeholder] {
+    text-align: center;
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   ul {
@@ -34,5 +54,107 @@
     padding: 10px 15px;
     font-family: "Montserrat_Alternates";
     color: var(--highlight);
+  }
+
+  li:hover {
+    border-bottom: 2px white solid;
+  }
+
+  /* Media Queries zum Überschreiben von CSS-Regeln */
+  /* Mobile First-Ansatz */
+
+  /* Smartphone-Design <640px */
+  @media (max-width: 640px) {
+    h3 {
+      background-color: yellow;
+    }
+    nav {
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+
+      justify-content: center;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  /* Smartphones im Querformat */
+  @media (min-width: 640px) {
+    h3 {
+      background-color: orange;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+
+      justify-content: center;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  /* Tablets Hochformat */
+  @media (min-width: 768px) {
+    h3 {
+      background-color: red;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    input {
+      display: block;
+    }
+  }
+
+  /* Tablets Querformat & kleine Monitore */
+  @media (min-width: 1024px) {
+    h3 {
+      background-color: blue;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    input {
+      display: block;
+    }
+  }
+
+  /* Große Monitore */
+  @media (min-width: 1280px) {
+    h3 {
+      background-color: green;
+    }
+
+    nav{
+      position: fixed;
+      top: 0;
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    input{
+      display: block;
+    }
   }
 </style>
