@@ -1,12 +1,7 @@
-/* Media Queries zum Überschreiben von CSS-Regeln */
-/* Mobile First-Ansatz */
-
-/* Smartphone-Design <640px */
-h3 {
+/* h3 {
 	background-color: yellow;
 }
 
-/* Smartphones im Querformat */
 @media (min-width: 640px) {
 	h3 {
 		background-color: orange;
@@ -16,23 +11,167 @@ h3 {
 
 }
 
-/* Tablets Hochformat */
+
 @media (min-width: 768px) {
 	h3 {
 		background-color: red;
 	}	
 }
 
-/* Tablets Querformat & kleine Monitore */
 @media (min-width: 1024px) {
 	h3 {
 		background-color: blue;
 	}	
 }
 
-/* Große Monitore */
+
 @media (min-width: 1280px) {
 	h3 {
 		background-color: green;
 	}	
+} */
+
+
+
+@media (max-width: 1280px) {
+    h3 {
+        background-color: green;
+    }
+
+
+    .about {
+        border: 20px red solid;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-img {
+        max-width: 500px;
+        height: ;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        text-align: center;
+        height: 100vh;
+    }
+
+    .fake-grid{
+        display: flex;
+        flex-direction: column;
+        
+
+        background-color: var(--bg-color);
+    }
+
+    .fake-grid{
+        width: 100%;
+    }
+
+    .landing-page-para {
+        background-color: green;
+        padding: 10px;
+
+    }
+
+    .landing-page-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+
+        width: 50%;
+    }
+
+}
+
+@media (max-width:1024px) {
+    h3 {
+        background-color: blue;
+    }
+
+
+    .area {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .landing-page-para {
+        background-color: red;
+        padding: 10px;
+
+    }
+
+    .landing-page-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: left;
+
+        width: 50%;
+
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .about-img {
+        max-width: 40vw;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    h3 {
+        background-color: red;
+    }
+
+
+
+
+    .area {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* 
+      section {
+        margin: 1rem;
+    
+        width: 100vw;
+       
+  
+        background-color: rgb(195, 195, 195);
+        border-radius: 15px;
+      } */
+
+    img {
+        width: 30vw;
+        height: 30vh;
+        object-fit: fill;
+        border-radius: 0;
+    }
+
+    button {
+        display: none;
+    }
+
+}
+
+@media (max-width: 640px) {
+    h3 {
+        background-color: orange;
+    }
+
+
 }
