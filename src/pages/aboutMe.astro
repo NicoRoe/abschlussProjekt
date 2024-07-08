@@ -5,7 +5,10 @@ import "../css/style.css";
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
+import Newfooter from "../components/Newfooter.astro";
 
+import labrador from "../assets/images/labrador.jpg";
+import cat from "../assets/images/cat.jpg";
 ---
 
 <html lang="en">
@@ -14,7 +17,9 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <script src="https://kit.fontawesome.com/506e46f956.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/506e46f956.js"
+      crossorigin="anonymous"></script>
     <title>Astro</title>
   </head>
   <body>
@@ -23,14 +28,11 @@ import Footer from "../components/Footer.astro";
     <h3 class="headline-xl">About us</h3>
     <section class="wrapper">
       <div class="">
-        
-        <h2 class="headline-l">Lorem Ipsum</h2>
+        <h2 class="headline-l">Small Start-up</h2>
       </div>
       <p class="paragraph">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
-        officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
-        quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
-        optio culpa?
+        officiis aliquam quis eaque sequi accusantium
       </p>
     </section>
     <section class="wrapper">
@@ -40,33 +42,33 @@ import Footer from "../components/Footer.astro";
         quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
         optio culpa?
       </p>
-      <div class="">
-        <div class="test">BILD</div>
-        <h2 class="headline-l">Lorem Ipsum</h2>
+      <div class="test">
+        <img src={labrador.src} />
+        <h2 class="headline-l">Fluffboi</h2>
       </div>
     </section>
     <section class="wrapper">
-        <div class="">
-          <div class="test">BILD</div>
-          <h2 class="headline-l">Lorem Ipsum</h2>
-        </div>
-        <p class="paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
-          officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
-          quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
-          optio culpa?
-        </p>
-      </section>
+      <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam vero quo
+        officiis aliquam quis eaque sequi accusantium, necessitatibus dicta
+        quidem fugit impedit nam quas reprehenderit maiores adipisci repudiandae
+        optio culpa?
+      </p>
+      <div class="test">
+        <img src={cat.src} class="cat"/>
+        <h2 class="headline-l">Dr. Williams</h2>
+      </div>
+    </section>
   </body>
-
-  <Footer />
 </html>
 
-<style>
+<Footer />
+<Newfooter />
 
-body{
-        background-color: var(--bg-color);
-    }
+<style>
+  body {
+    background-color: var(--bg-color);
+  }
 
   .wrapper {
     display: flex;
@@ -82,6 +84,12 @@ body{
     background-color: black;
     color: white;
   }
+
+.cat{
+  width: 200px;
+  height: 200px;
+  background-size: ;
+}
 
   p {
     width: 50%;

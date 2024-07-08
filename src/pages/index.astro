@@ -2,7 +2,7 @@
 import "../css/fonts.css";
 import "../css/style.css";
 import "../css/variables.css";
-import "../css/responsive.css";
+/* import "../css/responsive.css"; */
 
 import test from "../assets/images/test.jpeg";
 import kueste from "../assets/images/kuestenlandschaft.jpg";
@@ -13,6 +13,9 @@ import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
+import Newfooter from "../components/Newfooter.astro";
+import Area from "../components/Area.astro";
+import Mainlayout from "../components/Mainlayout.astro"
 ---
 
 <html lang="en">
@@ -34,132 +37,38 @@ import Card from "../components/Card.astro";
       <!-- <img src={chip.src} alt="" /> -->
       <h1 class="headline-xl">Who knows?</h1>
     </div>
+    <!-- <Mainlayout /> -->
     <section class="main-layout">
       <h3 class="headline-l">Hello World #617</h3>
-	  
+
       <p class="paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
-        odit assumenda esse suscipit porro a aliquam inventore velit quibusdam
-        dolor praesentium sit atque magni tempore saepe est deserunt ratione
-        autem!
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
+        odit assumenda esse suscipit
+        autem!"
       </p>
 
       <!-- <img src={test.src} alt="" /> -->
     </section>
+    <Area />
 
-    <section class="about">
-      <img class="about-img" src={birne.src} alt="" />
-      <div class="landing-page-text-container">
-        <h3>About us</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </section>
-
-    <section class="area">
-      <div class="fake-grid">
-        <!-- <img src={kueste.src} alt="" /> -->
-		<i class="fa-solid fa-cloud-arrow-up"></i>
-		<i class=""></i>
-        <p class="landing-page-para">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
-          ad!
-        </p>
-      </div>
-      <div class="fake-grid">
-        <!-- <img src={kueste.src} alt="" /> -->
-		<i class="fa-solid fa-gamepad"></i>
-        <p class="landing-page-para">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
-          ad!
-        </p>
-      </div>
-      <div class="fake-grid">
-        <!-- <img src={kueste.src} alt="" /> -->
-		<i class="fa-solid fa-compass"></i>
-        <p class="landing-page-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, fuga!
-        </p>
-      </div>
-    </section>
     <Footer />
+    <Newfooter />
   </body>
 </html>
 
 <style>
- 
+ .landing-page-image {
+        background-image: url(../assets/images/chip.jpg);
+        object-fit: contain;
+        filter: grayscale(50%);
 
-  /*   .area{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+        /* height: 50vh; */
+        margin-top: 5%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+      }
 
-		border-top: 1px darkgray solid;
-		border-bottom: 1px darkgray solid;
-		background-color: rgb(209, 208, 208);
-
-		margin-top: 100px;
-		
-		height: 100vh;
-	} */
-
-  body {
-    background-color: var(--bg-color);
-  }
-
-  .landing-page-image{
-	background-image: url(../assets/images/chip.jpg);
-	object-fit: contain;
-	filter: grayscale(50%);
-	
-	height: 95vh;
-	margin-top: 5%;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-  }
-
-  img{
-	
-	z-index: -1;
-
-	border: 15px 0;
-  }
-
-  h1{
-	position: relative;
-	top: 250px;
-	color: white;
-  }
-
-.main-layout{
-	padding: 2rem;
-	height: 50vh;
-}
-
-  /* div{
-	position: relative;
-	top: 0;
-	right: 0;
-	top: 0;
-}
-
- 
-
-  h1{
-	position: absolute;
-	bottom: 0;
-	left: 35%;
-  } */
-
-  /*   img {
-    width: 100vw;
-    height: 30vh;
-    object-fit: cover;
-  } */
-
-
-
-  a {
-    color: var(--blue);
-    text-decoration: underline;
+  .paragraph{
+    font-style: italic;
   }
 </style>

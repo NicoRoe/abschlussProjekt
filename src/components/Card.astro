@@ -1,12 +1,16 @@
 ---
-import "../css/responsive.css"
+import "../css/responsive.css";
 
 import kueste from "../assets/images/kuestenlandschaft.jpg";
 import details from "../pages/details.astro";
+
+const { title, imageSrc, detailCard } = Astro.props;
 ---
 
 <section class="card-layout">
-  <img src={kueste.src} alt="" />
+  <!-- <img src={imageSrc.src} alt="" /> -->
+  <div class="simulant">hello</div>
+  <h3>{title}</h3>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet, deserunt
     ratione earum aperiam nesciunt explicabo ut, consectetur tenetur voluptate
@@ -14,12 +18,21 @@ import details from "../pages/details.astro";
   </p>
 
   <button>
-    <a href=''>more</a><i class="fa-solid fa-arrow-right"></i>
+    <a href={detailCard}>more</a><i class="fa-solid fa-arrow-right"></i>
   </button>
 </section>
 
 <style>
-  section {
+  .simulant {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+  }
+
+  .card-layout {
+    border: 1px solid black;
+
     margin: 1rem;
 
     display: flex;
@@ -29,7 +42,7 @@ import details from "../pages/details.astro";
     width: 350px;
     height: auto;
 
-   /*  background-color: rgb(195, 195, 195); */
+    /*  background-color: rgb(195, 195, 195); */
     border-radius: 15px;
     /* border: 5px green solid; */
   }
@@ -58,8 +71,4 @@ import details from "../pages/details.astro";
   i {
     padding: 5px;
   }
-
-
-
- 
 </style>

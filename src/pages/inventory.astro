@@ -10,6 +10,7 @@ import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
+import Newfooter from "../components/Newfooter.astro";
 ---
 
 <html lang="en">
@@ -28,14 +29,15 @@ import Card from "../components/Card.astro";
 
     <section class="inventory">
       <!-- <img src={test.src} alt="" /> -->
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card title="Item01" imageSrc="{test.src}" detailCard="{/pages/details.astro}"/>
+      <Card title="Item02" imageSrc="{kueste.src}"/>
+      <Card title="Item03" imageSrc="{kueste.src}"/>
+      <Card title="Item04" imageSrc="{kueste.src}"/>
+      <Card title="Item05" imageSrc="{kueste.src}"/>
+      <Card title="Item06" imageSrc="{kueste.src}"/>
     </section>
     <Footer />
+
   </body>
 </html>
 

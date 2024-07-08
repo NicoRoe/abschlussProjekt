@@ -6,13 +6,11 @@
   <div class="search-input">
     <input type="text" placeholder="search" />
   </div>
-  <ul>
-    <div class="links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/aboutMe">About</a></li>
-      <li><a href="/inventory">Inventory</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </div>
+  <ul class="links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutMe">About</a></li>
+    <li><a href="/inventory">Inventory</a></li>
+    <li><a href="/contact">Contact</a></li>
   </ul>
   <div class="shop-icons">
     <i class="fa-solid fa-bag-shopping"></i>
@@ -23,152 +21,160 @@
 </nav>
 
 <style>
-  nav {
-    background-color: var(--bg-color);
-
-    z-index: 10;
-
-    width: 100vw;
-    height: 10vh;
-
-    display: flex;
-    justify-content: space-around;
-  }
-
-  input {
-    border-radius: 15px;
-  }
-
-  input[placeholder] {
-    text-align: center;
-  }
-
-  .search-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0 15px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: end;
-  }
-
-  li {
-    padding: 10px 15px;
-    font-family: "Montserrat_Alternates";
-    font-weight: 600;
-    color: var(--primary);
-  }
-
-  li:hover {
-    border-bottom: 2px white solid;
-  }
-
-  i{
-    color: var(--primary);
-  }
-
-  /* Media Queries zum Überschreiben von CSS-Regeln */
-
-
-  /* Smartphone-Design <640px */
-  @media (max-width: 640px) {
-    h3 {
-      background-color: yellow;
-    }
+  @media (min-width: 425px) {
     nav {
-      width: 100vw;
-      position: fixed;
-      bottom: 0;
+      background-color: var(--bg-color);
 
-      justify-content: center;
+      z-index: 10;
+
+      margin-bottom: 15opx;
+
+      min-width: 425px;
+      height: 10vh;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
 
     input {
+      border-radius: 15px;
+    }
+
+    input[placeholder] {
+      text-align: center;
+    }
+
+    .search-input {
       display: none;
-    }
-  }
-
-  /* Smartphones im Querformat */
-  @media (max-width: 640px) {
-    h3 {
-      background-color: orange;
+      /*       align-items: center;
+      justify-content: center; */
     }
 
-    nav {
-      position: fixed;
-      bottom: 0;
-
-      justify-content: center;
+    ul {
+      list-style-type: none;
+      margin: 0 15px;
     }
 
-    input {
+    li {
+      padding: 10px 15px;
+      font-family: "Montserrat_Alternates";
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    li:hover {
+      border-bottom: 2px white solid;
+    }
+
+    i {
+      color: var(--primary);
+    }
+
+    .links {
+      display: flex;
+      justify-content: end;
+    }
+
+    .shop-icons {
       display: none;
     }
   }
 
   /* Tablets Hochformat */
-  @media (max-width: 768px) {
-    h3 {
+  @media (min-width: 768px) {
+    /*     h3 {
       background-color: red;
-    }
+    } */
 
     nav {
-      position: fixed;
-      top: 0;
-      height: 50px;
+      background-color: var(--bg-color);
+
+      z-index: 10;
+
+      margin-bottom: 15px;
+
+      min-width: 768px;
+      height: 10vh;
+
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-around;
       align-items: center;
+
+      background-color: rgb(255, 0, 242);
+    }
+
+    .shop-icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     input {
-      display: block;
+      display: hidden;
     }
   }
 
   /* Tablets Querformat & kleine Monitore */
-  @media (max-width: 1024px) {
-    h3 {
-      background-color: blue;
-    }
+  @media (min-width: 1024px) {
     nav {
-      position: fixed;
-      top: 0;
-      height: 50px;
+      background-color: var(--bg-color);
+
+      z-index: 10;
+
+      margin-bottom: 15opx;
+
+      min-width: 425px;
+      height: 10vh;
+
       display: flex;
       justify-content: space-around;
       align-items: center;
+    }
+
+    .search-input {
+      align-items: center;
+      justify-content: center;
+      display: block;
     }
 
     input {
+      border-radius: 15px;
       display: block;
-    }
-  }
-
-  /* Große Monitore */
-  @media (min-width: 1280px) {
-    h3 {
-      background-color: green;
+      
     }
 
-    nav{
-      position: fixed;
-      top: 0;
-      height: 50px;
+    input[placeholder] {
+      text-align: center;
+    }
+
+    .links {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: end;
     }
 
-    input{
-      display: block;
+    .shop-icons > * {
+      padding: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0 15px;
+    }
+
+    li {
+      padding: 10px 15px;
+      font-family: "Montserrat_Alternates";
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    li:hover {
+      border-bottom: 2px var(--primary) solid;
+    }
+
+    i {
+      color: var(--primary);
     }
   }
 </style>

@@ -6,6 +6,7 @@ import "../css/style.css";
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
 import Footer from "../components/Footer.astro";
+import Newfooter from "../components/Newfooter.astro";
 ---
 
 <html lang="en">
@@ -23,13 +24,13 @@ import Footer from "../components/Footer.astro";
     <!-- <Navigation /> -->
     <Navigation2 />
     <h2 class="headline-xl">Contact me below!</h2>
-    <div>
-      <form action="">
-        <label for="name-input">Your Name:</label>
-        <input type="text" id="name-input" name="name" placeholder="Name" />
-      </form>
+<div>
+    <form action="">
+      <label for="name-input">Your Name:</label>
+      <input type="text" id="name-input" name="name" placeholder="Name" />
+    </form>
 
-      <!--       <form action="">
+    <!--       <form action="">
         <label for="last-name-input">Your Last-name:</label>
         <input
           type="text"
@@ -39,42 +40,43 @@ import Footer from "../components/Footer.astro";
         />
       </form> -->
 
-      <form action="">
-        <label for="email-input">Your e-mail:</label>
-        <input
-          type="text"
-          id="email-input"
-          name="email-name"
-          placeholder="Email"
-        />
-      </form>
+    <form action="">
+      <label for="email-input">Your e-mail:</label>
+      <input
+        type="text"
+        id="email-input"
+        name="email-name"
+        placeholder="Email"
+      />
+    </form>
 
-      <form action="">
-        <label for="subject-input">Your Subject:</label>
-        <input
-          type="text"
-          id="subject-input"
-          name="subject-name"
-          placeholder="Subject"
-        />
-      </form>
+    <form action="">
+      <label for="subject-input">Your Subject:</label>
+      <input
+        type="text"
+        id="subject-input"
+        name="subject-name"
+        placeholder="Subject"
+      />
+    </form>
 
-      <form action="">
-        <label for="text">Your message:</label>
-        <textarea name="work-experience" rows="12" cols="40"></textarea>
-      </form>
-      <button type="submit">Submit<i></i></button>
-    </div>
+    <form action="">
+      <label for="text">Your message:</label>
+      <textarea name="work-experience" rows="12" cols="40"></textarea>
+    </form>
+    <button type="submit">Submit<i></i></button>
 
     <Footer />
+    <Newfooter />
   </body>
 </html>
 
 <style>
   input,
+  form,
   textarea {
-    border-radius: 7px;
-    width: 100%;
+    border-radius: 5px;
+    width: 66vw;
   }
 
   input[type="text"],
@@ -82,7 +84,7 @@ import Footer from "../components/Footer.astro";
     font-family: "ReenieBeanie";
   }
 
-  input:hover[type="text"]{
+  input:hover[type="text"] {
     transform: scale(1.1);
   }
 
@@ -103,7 +105,7 @@ import Footer from "../components/Footer.astro";
   div {
     width: 100%;
 
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 
