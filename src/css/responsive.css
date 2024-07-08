@@ -40,9 +40,7 @@
 
     /* 1024px */
 
-    h3 {
-        background-color: green;
-    }
+  
 
     .landing-page-text-container {
         display: flex;
@@ -112,9 +110,7 @@
 }
 
 @media (min-width: 768px) {
-    h3 {
-        background-color: rgb(255, 0, 242);
-    }
+
 
     .landing-page-text-container {
         display: flex;
@@ -212,9 +208,6 @@
         border-top-right-radius: 25px;
     }
 
-    h3 {
-        background-color: rgb(159, 52, 154);
-    }
 
  
 

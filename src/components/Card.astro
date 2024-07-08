@@ -8,8 +8,7 @@ const { title, imageSrc, detailCard } = Astro.props;
 ---
 
 <section class="card-layout">
-  <!-- <img src={imageSrc.src} alt="" /> -->
-  <div class="simulant">hello</div>
+  <img src={imageSrc} alt="" />
   <h3>{title}</h3>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet, deserunt
@@ -48,8 +47,11 @@ const { title, imageSrc, detailCard } = Astro.props;
   }
 
   img {
-    object-fit: contain;
-    height: 10%;
+    object-fit: cover;
+    height: 100%;
+
+    width: auto;
+    height: 200px;
 
     border-radius: 15px 15px 0 0;
   }

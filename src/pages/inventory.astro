@@ -5,6 +5,11 @@ import "../css/variables.css";
 
 import test from "../assets/images/test.jpeg";
 import kueste from "../assets/images/kuestenlandschaft.jpg";
+import labrador from "../assets/images/labrador.jpg";
+import black from "../assets/images/black.jpg"
+import keramik from "../assets/images/keramik.jpg";
+import keramik2 from "../assets/images/keramik2.jpg";
+import keramik3 from "../assets/images/keramik3.jpg";
 
 import Navigation from "../components/Navigation.astro";
 import Navigation2 from "../components/Navigation2.astro";
@@ -19,25 +24,30 @@ import Newfooter from "../components/Newfooter.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <script src="https://kit.fontawesome.com/506e46f956.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/506e46f956.js"
+      crossorigin="anonymous"></script>
     <title>Astro</title>
   </head>
   <body>
-    <!-- <Navigation /> -->
+ <!--   <Navigation />  -->
     <Navigation2 />
     <h3 class="headline-xl">Inventory</h3>
 
     <section class="inventory">
-      <!-- <img src={test.src} alt="" /> -->
-      <Card title="Item01" imageSrc="{test.src}" detailCard="{/pages/details.astro}"/>
-      <Card title="Item02" imageSrc="{kueste.src}"/>
-      <Card title="Item03" imageSrc="{kueste.src}"/>
-      <Card title="Item04" imageSrc="{kueste.src}"/>
-      <Card title="Item05" imageSrc="{kueste.src}"/>
-      <Card title="Item06" imageSrc="{kueste.src}"/>
+      <img src={black.src} alt="" />
+      <Card
+        title="Item01"
+        imageSrc={keramik3.src}
+        detailCard={}/>
+      <Card title="Item02" imageSrc={keramik.src} />
+      <Card title="Item03" imageSrc={keramik2.src} />
+      <Card title="Item04" imageSrc={keramik3.src} />
+      <Card title="Item05" imageSrc={keramik.src} />
+      <Card title="Item06" imageSrc={keramik2.src} />
     </section>
     <Footer />
-
+    <Newfooter />
   </body>
 </html>
 
@@ -54,6 +64,10 @@ import Newfooter from "../components/Newfooter.astro";
   img {
     width: 100vw;
     height: 30vh;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   h1 {
